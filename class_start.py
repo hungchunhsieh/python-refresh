@@ -43,3 +43,17 @@ car1.drive(30)
 car2.drive(50)
 m1.drive(80)
 
+car_park = []
+
+car_park.append(car1)
+car_park.append(car2)
+car_park.append(m1)
+for i in car_park:
+    if type(i) == Car:
+        print(i.enginetype)
+    if type(i) == Motorcycle:
+        print("object:", i)
+
+print(car_park)
+
+
